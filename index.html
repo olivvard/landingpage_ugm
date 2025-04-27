@@ -1,0 +1,1617 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="scss/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid bg-primary border-1 border-bottom border-secondary sticky-top">
+            <div
+                class="container-sm bg-primary text-white d-flex justify-content-between align-items-center sticky-top py-2">
+
+                <div class="d-flex align-items-center py-2">
+
+                    <!-- Hamburger -->
+                    <nav class="navbar d-lg-none">
+                        <div class="container-fluid">
+                            <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                                aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="offcanvas offcanvas-top offcanvas-fullscreen d-lg-none bg-primary fade"
+                                tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                                <div class="offcanvas-header border-1 border-bottom border-secondary">
+                                    <img src="assets/img/ugm_logo.webp" alt="" style="height: 50px;"
+                                        class="d-lg-none me-3">
+                                    <h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel">UNIVERSITAS GADJAH
+                                        MADA</h5>
+                                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body bg-dark-primary d-flex flex-column justify-content-between">
+                                    <ul class="navbar-nav justify-content-center w-100">
+                                        <li class="nav-item d-flex justify-content-between">
+                                            <a class="nav-link  sec-bar" href="#">Pendaftaran</a>
+                                            <a href="#" class="sec-bar"><i class="fa-solid fa-chevron-right"></i></a>
+                                        </li>
+                                        <li class="nav-item d-flex justify-content-between">
+                                            <a class="nav-link  sec-bar" href="#">Pendidikan</a>
+                                            <a href="#" class="sec-bar"><i class="fa-solid fa-chevron-right"></i></a>
+                                        </li>
+                                        <li class="nav-item d-flex justify-content-between">
+                                            <a class="nav-link  sec-bar" href="#">Penelitian</a>
+                                            <a href="#" class="sec-bar"><i class="fa-solid fa-chevron-right"></i></a>
+                                        </li>
+                                        <li class="nav-item d-flex justify-content-between">
+                                            <a class="nav-link  sec-bar" href="#">Pengabdian</a>
+                                            <a href="#" class="sec-bar"><i class="fa-solid fa-chevron-right"></i></a>
+                                        </li>
+                                        <li class="nav-item d-flex justify-content-between">
+                                            <a class="nav-link  sec-bar" href="#">Layanan</a>
+                                            <a href="#" class="sec-bar"><i class="fa-solid fa-chevron-right"></i></a>
+                                        </li>
+                                        <li class="nav-item d-flex justify-content-between">
+                                            <a class="nav-link  sec-bar" href="#">Tentang</a>
+                                            <a href="#" class="sec-bar"><i class="fa-solid fa-chevron-right"></i></a>
+                                        </li>
+                                        <li class="nav-item d-flex justify-content-between">
+                                            <a class="nav-link  sec-bar" href="#">SDGs Portal</a>
+                                            <a href="#" class="sec-bar"><i class="fa-solid fa-chevron-right"></i></a>
+                                        </li>
+                                        <li class="nav-item d-flex justify-content-between">
+                                            <a class="nav-link  sec-bar" href="#">Berita</a>
+                                            <a href="#" class="sec-bar"><i class="fa-solid fa-chevron-right"></i></a>
+                                        </li>
+                                    </ul>
+                                    <div class="bg-primary py-4 px-3">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <ul
+                                                    class="text-decoration-none d-flex justify-content-center align-items-center gap-4">
+                                                    <li style="list-style: none;"><a href="#" class="text-white"><i
+                                                                class="fs-3 fa-brands fa-instagram"></i></a></li>
+                                                    <li style="list-style: none;"><a href="#" class="text-white"><i
+                                                                class="fs-3 fa-brands fa-youtube"></i></a></li>
+                                                    <li style="list-style: none;"><a href="#" class="text-white"><i
+                                                                class="fs-3 fa-brands fa-facebook"></i></a></li>
+                                                    <li style="list-style: none;"><a href="#" class="text-white"><i
+                                                                class="fs-3 fa-brands fa-x-twitter"></i></a></li>
+                                                    <li style="list-style: none;"><a href="#" class="text-white"><i
+                                                                class="fs-3 fa-brands fa-linkedin-in"></i></a></li>
+                                                    <li style="list-style: none;"><a href="#" class="text-white"><i
+                                                                class="fs-3 fa-brands fa-tiktok"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <ul
+                                                    class="d-flex justify-content-between list-unstyled mb-3 d-lg-none">
+                                                    <li><a href="#" class="text-decoration-none sec-bar">Email</a></li>
+                                                    <li><a href="#"
+                                                            class="text-decoration-none sec-bar">Perpustakaan</a></li>
+                                                    <li><a href="#" class="text-decoration-none sec-bar">Mahasiswa</a>
+                                                    </li>
+                                                    <li><a href="#" class="text-decoration-none sec-bar">Staff</a></li>
+                                                    <li><a href="#" class="text-decoration-none sec-bar">Alumni</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                    <!-- Logo and Text -->
+                    <div class="d-flex align-items-center gap-2">
+                        <img src="assets/img/ugm_logo.webp" alt="" style="height: 50px;" class="d-lg-none">
+                        <img src="assets/img/ugm_logo.webp" alt="" style="height: 80px;" class="d-none d-lg-block">
+
+                        <!-- sm -->
+                        <div class="d-flex flex-column lh-1 d-lg-none"
+                            style="font-family: 'Gama-Serif-Regular'; font-size: 1rem;">
+                            <span>UNIVERSITAS</span>
+                            <span>GADJAH MADA</span>
+                        </div>
+                        <!-- sm -->
+
+                        <!-- lg -->
+                        <div class="d-flex flex-column lh-1 d-none d-lg-block"
+                            style="font-family: 'Gama-Serif-Regular'; font-size: 1.5rem;">
+                            <div>UNIVERSITAS</div>
+                            <span>GADJAH MADA</span>
+                        </div>
+                        <!-- lg -->
+                    </div>
+
+                </div>
+                <div>
+                    <div class="d-flex justify-content-between align-items-center mt-3 py-2 px-3">
+                        <div class="d-flex align-items-center gap-2">
+                            <ul class="d-flex justify-content-center align-items-center gap-4 list-unstyled">
+                                <li class="d-none d-lg-block"><a href="#" class="sec-bar"><i
+                                            class="fs-5 fa-brands fa-instagram"></i></a></li>
+                                <li class="d-none d-lg-block"><a href="#" class="sec-bar"><i
+                                            class="fs-5 fa-brands fa-youtube"></i></a></li>
+                                <li class="d-none d-lg-block"><a href="#" class="sec-bar"><i
+                                            class="fs-5 fa-brands fa-facebook"></i></a></li>
+                                <li class="d-none d-lg-block"><a href="#" class="sec-bar"><i
+                                            class="fs-5 fa-brands fa-x-twitter"></i></a></li>
+                                <li class="d-none d-lg-block"><a href="#" class="sec-bar"><i
+                                            class="fs-5 fa-brands fa-linkedin-in"></i></a>
+                                </li>
+                                <li class="d-none d-lg-block">I
+                                </li>
+                                <li><a href="#" class="text-white "><img src="assets/img/indonesia.png"
+                                            alt="Indonesia Flag" style="width:1rem;"></a></li>
+                                <li><a href="#" class="text-white text-decoration-none"><span
+                                            class="fw-bold">ID</span></a></li>
+                                <li><a href="#" class="text-white"><i class="fa-solid fa-chevron-down"></i></a></li>
+                                <li><a href="#" class="text-white"><span class="fw-bold"><i
+                                                class="fa-solid fa-magnifying-glass"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <ul class="d-flex justify-content-between list-unstyled mb-3 d-none d-lg-flex">
+                            <li><a href="#" class="text-decoration-none sec-bar">Email</a></li>
+                            <li><a href="#" class="text-decoration-none sec-bar">Perpustakaan</a></li>
+                            <li><a href="#" class="text-decoration-none sec-bar">Mahasiswa</a></li>
+                            <li><a href="#" class="text-decoration-none sec-bar">Staff</a></li>
+                            <li><a href="#" class="text-decoration-none sec-bar">Alumni</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- second navbar -->
+        <div class="d-none d-lg-block container-fluid bg-dark-primary py-1">
+            <div class="container-sm bg-dark-primary">
+                <ul class="d-flex align-items-center justify-content-between list-unstyled mt-2">
+                    <li><a href="#" class="sec-bar text-decoration-none">Pendaftaran</a></li>
+                    <li><a href="#" class="sec-bar text-decoration-none">Pendidikan</a></li>
+                    <li><a href="#" class="sec-bar text-decoration-none">Penelitian</a></li>
+                    <li><a href="#" class="sec-bar text-decoration-none">Pengabdian</a></li>
+                    <li><a href="#" class="sec-bar text-decoration-none">Layanan</a></li>
+                    <li><a href="#" class="sec-bar text-decoration-none">Tentang</a></li>
+                    <li><a href="#" class="sec-bar text-decoration-none">SDGs Portal</a></li>
+                    <li><a href="#" class="sec-bar text-decoration-none">Berita</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <!-- carousel start -->
+        <section id="carousel">
+            <div class="container-sm mt-3">
+                <div id="carouselExampleIndicators" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                            aria-label="Slide 5"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item position-relative active">
+                            <div class="card border-0">
+                                <img src="assets/img/c1.webp" class="w-100 object-fit-cover carousel-img img-hvr"
+                                    alt="...">
+                                <div class="card-body bg-primary">
+                                    <div class="row d-md-flex justify-content-between align-items-center">
+                                        <div class="col-12 col-md-8">
+                                            <p class="text-secondary fw-semibold" style="font-size: 0.8rem;">Prestasi
+                                            </p>
+                                            <h1 class="card-text text-white">Wakil Rektor UGM Tinjau Sejumlah Lokasi
+                                                Ujian UTBK di Fakulktas dan Perpustakaan</h1>
+                                            <p class="text-white truncate-3-lines overflow-hidden">Pimpinan Kunjungi
+                                                Sejumlah Lokasi Ujian UTBK di UGM. Sejulah Lokasi pelaksanaan Ujian
+                                                Tulis Berbasis Komputer (UTBK) Seleksi Nasional Berdasarkan Tes (SNBT)
+                                                2025 di UGM mendapat kunjungan</p>
+                                        </div>
+                                        <div class="col-md-4 d-none d-md-block">
+                                            <img src="assets/img/ugm_logo.webp" alt="" class="w-25 opacity-25">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item position-relative">
+                            <div class="card border-0">
+                                <img src="assets/img/c2.webp" class="w-100 object-fit-cover carousel-img img-hvr"
+                                    alt="...">
+                                <div class="card-body bg-primary">
+                                    <div class="row d-md-flex justify-content-between align-items-center">
+                                        <div class="col-12 col-md-8">
+                                            <p class="text-secondary fw-semibold" style="font-size: 0.8rem;">Wisuda
+                                            </p>
+                                            <h1 class="card-text text-white">Kisah Dewi Agustiningsih, Lulus Doktor 2
+                                                Tahun 6 Bulan di usia 26 Tahun di UGM</h1>
+                                            <p class="text-white truncate-3-lines overflow-hidden">Gadjah Mada baru
+                                                Universitas saja mewisuda sebanyak 1.455
+                                                pada Rabu (23/04) lalu. Dari ribuan pascasarjana mahasiswa
+                                                terdapat 1.263 magister, 83 spesialis, wisudawan, 17
+                                                subspesialis, dan 92...
+
+                                            </p>
+                                        </div>
+                                        <div class="col-md-4 d-none d-md-block">
+                                            <img src="assets/img/ugm_logo.webp" alt="" class="w-25 opacity-25">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item position-relative">
+                            <div class="card border-0">
+                                <img src="assets/img/c3.webp" class="w-100 object-fit-cover carousel-img img-hvr"
+                                    alt="...">
+                                <div class="card-body bg-primary">
+                                    <div class="row d-md-flex justify-content-between align-items-center">
+                                        <div class="col-12 col-md-8">
+                                            <p class="text-secondary fw-semibold" style="font-size: 0.8rem;">Pendidikan
+                                            </p>
+                                            <h1 class="card-text text-white">
+                                                Ikut Jalur Fast Track, Siti Fadila Bisa Lulus S2 UGM di Usia 22 Tahun
+                                            </h1>
+                                            <p class="text-white truncate-3-lines overflow-hidden">Universitas Gadjah
+                                                Mada meluluskan 1.455 mahasiswa
+                                                Pascasarjana pada Wisuda Program Pascasarjana pada 23 April
+                                                kemarin. Di antara para wisudawan tersebut, Siti Fadila
+                                                Nuraisyah mencuri perha ...
+
+                                            </p>
+                                        </div>
+                                        <div class="col-md-4 d-none d-md-block">
+                                            <img src="assets/img/ugm_logo.webp" alt="" class="w-25 opacity-25">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item position-relative">
+                            <div class="card border-0">
+                                <img src="assets/img/c4.webp" class="w-100 object-fit-cover carousel-img img-hvr"
+                                    alt="...">
+                                <div class="card-body bg-primary">
+                                    <div class="row d-md-flex justify-content-between align-items-center">
+                                        <div class="col-12 col-md-8">
+                                            <p class="text-secondary fw-semibold" style="font-size: 0.8rem;">Prestasi
+                                            </p>
+                                            <h1 class="card-text text-white">
+                                                Prodi Antropologi UGM Masuk Peringkat 101-170 Dunia dalam QS WUR By
+                                                Subject 2025
+                                            </h1>
+                                            <p class="text-white truncate-3-lines overflow-hidden">Program Studi (Prodi)
+                                                Antropologi, Fakultas Ilmu Budaya (FIB) Universitas Gadjah Mada berhasil
+                                                menempati peringkat 101-170 dunia dalam QS World University Rankings by
+                                                Subject 2025. Capaian A ...
+                                            </p>
+                                        </div>
+                                        <div class="col-md-4 d-none d-md-block">
+                                            <img src="assets/img/ugm_logo.webp" alt="" class="w-25 opacity-25">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item position-relative">
+                            <div class="card border-0">
+                                <img src="assets/img/c5.webp" class="w-100 object-fit-cover carousel-img img-hvr"
+                                    alt="...">
+                                <div class="card-body bg-primary">
+                                    <div class="row d-md-flex justify-content-between align-items-center">
+                                        <div class="col-12 col-md-8">
+                                            <p class="text-secondary fw-semibold" style="font-size: 0.8rem;">Wisuda
+                                            </p>
+                                            <h1 class="card-text text-white">
+                                                Berkostum Ledhek Gogik, Bapak Mertua Beri KejutanMenantunya di Acara
+                                                Wisuda UGM
+                                            </h1>
+                                            <p class="text-white truncate-3-lines overflow-hidden">Di tengah suasana
+                                                khidmat menyelimuti prosesi Wisuda Pascasarjana Periode III Tahun
+                                                Akademik 2024/2025 di Grha Sabha Pramana, Rabu (23/4). Nampak seorang
+                                                pria paruh bayamengenakan kostum tr ...
+                                            </p>
+                                        </div>
+                                        <div class="col-md-4 d-none d-md-block">
+                                            <img src="assets/img/ugm_logo.webp" alt="" class="w-25 opacity-25">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- carousel end -->
+
+        <!-- news start -->
+        <section id="news" class="mt-3">
+            <div class="container-sm">
+                <div class="title mt-5 d-flex justify-content-between align-items-end">
+                    <span class="fs-1 text-primary border-3 border-secondary border-bottom">Berita Terbaru</span>
+                    <a href="#" class="text-decoration-none"><span
+                            class="fs-5 text-primary border-1 border-primary border-bottom pb-1 d-none d-lg-block">Lihat
+                            Semua <i class="fa-solid fa-arrow-right"></i></span></a>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-12 mb-3 d-lg-none">
+                        <div class="cardborder-0">
+                            <a href="#"><img src="assets/img/b1.webp" alt="" class="w-100 img-hvr object-fit-cover"></a>
+                            <div class="card-body">
+                                <span class="text-primary mb-3">Liputan/Berita</span>
+                                <div class="fs-4 fw-semibold"><a href="#" class="text-decoration-none text-primary">RSA
+                                        UGM Raih Status Rumah Sakit Kelas A</a></div>
+                                <span class="text-tertiary">26 Aril 2025, 20.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 mb-3 d-none d-lg-block">
+                        <div class="cardborder-0">
+                            <div class="row">
+                                <a href="#" class="col-7"><img src="assets/img/b1.webp" alt=""
+                                        class="w-100 img-hvr object-fit-cover"></a>
+                                <div class="card-body col-5">
+                                    <span class="text-primary mb-3">Liputan/Berita</span>
+                                    <div class="fs-3 fw-semibold"><a href="#"
+                                            class="text-decoration-none text-primary">RSA
+                                            UGM Raih Status Rumah Sakit Kelas A</a></div>
+                                    <span class="text-tertiary">26 Aril 2025, 20.00</span>
+                                    <p class="text-primary">Rumah Sakit Akademik Universitas Gadjah Mada (RSA UGM) resmi
+                                        meraih status Rumah Sakit Kelas A dari Kementerian Kesehatan Republik Indonesia.
+                                        Penetapan ini menandai babak baru bagi RSA UGM s...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- sm/md -->
+                    <div class="col-12 col-md-6 mb-3 d-lg-none">
+                        <div class="card d-flex justify-content-between align-items-centerborder-0">
+                            <div class="row d-flex justify-content-between align-items-center">
+                                <a href="#" class="col-4"><img src="assets/img/b2.webp" alt=""
+                                        class="w-100 img-hvr object-fit-cover news-img"></a>
+                                <div class="col-8 card-body">
+                                    <span class="text-primary mb-3">Seminar/Workshop</span>
+                                    <div class="fs-5 fw-semibold"><a href="#"
+                                            class="text-decoration-none text-primary truncate-3-lines">UGM dan Shell
+                                            Ajak Anak Muda Berinovasi</a></div>
+                                    <span class="text-tertiary">26 Aril 2025, 20.00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 mb-3 d-lg-none">
+                        <div class="card d-flex justify-content-between align-items-center shadow border-0">
+                            <div class="row d-flex justify-content-between align-items-center">
+                                <a href="#" class="col-4"><img src="assets/img/b3.webp" alt=""
+                                        class="w-100 img-hvr object-fit-cover news-img"></a>
+                                <div class="col-8 card-body">
+                                    <span class="text-primary mb-3">Orbituari</span>
+                                    <div class="fs-5 fw-semibold"><a href="#"
+                                            class="text-decoration-none text-primary truncate-3-lines">Mengenang
+                                            Keteladanan Sri Paus <span class="d-md-none">Fransiskus</span></a></div>
+                                    <span class="text-tertiary">26 Aril 2025, 20.00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 mb-3 d-lg-none">
+                        <div class="card d-flex justify-content-between align-items-center shadow border-0">
+                            <div class="row d-flex justify-content-between align-items-center">
+                                <a href="#" class="col-4"><img src="assets/img/b4.webp" alt=""
+                                        class="w-100 img-hvr object-fit-cover news-img"></a>
+                                <div class="col-8 card-body">
+                                    <span class="text-primary mb-3">Penelitian</span>
+                                    <div class="fs-5 fw-semibold"><a href="#"
+                                            class="text-decoration-none text-primary truncate-3-lines">Dosen UGM Teliti
+                                            Soal Kebijakan dan Praktik</a></div>
+                                    <span class="text-tertiary">26 Aril 2025, 20.00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- sm/md -->
+                    <!-- lg -->
+                    <div class="col-lg-4 mb-3 d-none d-lg-block">
+                        <div class="card shadow border-0">
+                            <a href="#"><img src="assets/img/b2.webp" alt=""
+                                    class="w-100 img-hvr object-fit-cover news-img"></a>
+                            <div class="card-body">
+                                <span class="text-primary mb-3">Seminar/Workshop</span>
+                                <div class="fs-4 fw-semibold"><a href="#" class="text-decoration-none text-primary">UGM
+                                        dan Shell Ajak Anak Muda Berinovasi</a></div>
+                                <span class="text-tertiary">26 Aril 2025, 20.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-3 d-none d-lg-block">
+                        <div class="card shadow border-0">
+                            <a href="#"><img src="assets/img/b3.webp" alt=""
+                                    class="w-100 img-hvr object-fit-cover news-img"></a>
+                            <div class="card-body">
+                                <span class="text-primary mb-3">Orbituari</span>
+                                <div class="fs-4 fw-semibold"><a href="#"
+                                        class="text-decoration-none text-primary">Mengenang Keteladanan Sri Paus <span
+                                            class="d-lg-none d-xxl-block">Fransiskus</span></a></div>
+                                <span class="text-tertiary">26 Aril 2025, 20.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-3 d-none d-lg-block">
+                        <div class="card shadow border-0">
+                            <a href="#"><img src="assets/img/b4.webp" alt=""
+                                    class="w-100 img-hvr object-fit-cover news-img"></a>
+                            <div class="card-body">
+                                <span class="text-primary mb-3">Penelitian</span>
+                                <div class="fs-4 fw-semibold"><a href="#"
+                                        class="text-decoration-none text-primary">Dosen UGM Teliti Soal Kebijakan dan
+                                        Praktik </a></div>
+                                <span class="text-tertiary">26 Aril 2025, 20.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#">
+                    <h3 class="text-end text-primary fw-light d-lg-none"><i class="fa-solid fa-arrow-right"></i></h3>
+                </a>
+            </div>
+        </section>
+        <!-- news end -->
+        <article>
+            <!-- pendidikan start -->
+            <section id="pendidikan" class="mt-3 d-lg-none">
+                <div class="container-sm">
+                    <div class="title mt-5 d-flex justify-content-between align-items-end">
+                        <span class="fs-1 text-primary border-3 border-secondary border-bottom">Pendidikan</span>
+                        <a href="#" class="text-decoration-none"><span
+                                class="fs-5 text-primary border-1 border-primary border-bottom pb-1 d-none d-lg-block">Lihat
+                                Semua <i class="fa-solid fa-arrow-right"></i></span></a>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-12 mb-3">
+                            <div class="card border-0">
+                                <a href="#"><img src="assets/img/c1.webp" alt=""
+                                        class="w-100 img-hvr object-fit-cover"></a>
+                                <div class="card-body">
+                                    <div class="fs-4 fw-semibold"><a href="#"
+                                            class="text-decoration-none text-primary">Wakil Rektor UGM Tinjau Sejumlah
+                                            Lokasi Ujian UTBK di Fakultas dan Perpustakaan</a></div>
+                                    <span class="text-tertiary">26 Aril 2025, 20.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- sm to md -->
+                        <div class="col-12 mb-3">
+                            <div class="card d-flex justify-content-between align-items-center border-0">
+                                <div class="row d-flex justify-content-between align-items-center">
+                                    <a href="#" class="col-4"><img src="assets/img/c2.webp" alt=""
+                                            class="w-100 img-hvr object-fit-cover pddk-img"></a>
+                                    <div class="col-8 card-body">
+                                        <div class="fs-6 fw-semibold"><a href="#"
+                                                class="text-decoration-none text-primary truncate-3-lines">Kisah Dewi
+                                                Agustiningsih, Lulus Doktor 2 Tahun 6 Bulan di usia 26 Tahun di</a>
+                                        </div>
+                                        <span class="text-tertiary">26 Aril 2025, 20.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mb-3">
+                            <div class="card d-flex justify-content-between align-items-center border-0">
+                                <div class="row d-flex justify-content-between align-items-center">
+                                    <a href="#" class="col-4"><img src="assets/img/p1.jpg" alt=""
+                                            class="w-100 img-hvr object-fit-cover pddk-img"></a>
+                                    <div class="col-8 card-body">
+                                        <div class="fs-6 fw-semibold"><a href="#"
+                                                class="text-decoration-none text-primary truncate-3-lines">Kisah Rizki,
+                                                Lulusan Terbaik S2 FEB UGM Kehilangan Ibu Jelang Wisuda</a></div>
+                                        <span class="text-tertiary">26 Aril 2025, 20.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- sm to md-->
+                    </div>
+                    <a href="#">
+                        <h3 class="text-end text-primary fw-light d-lg-none"><i class="fa-solid fa-arrow-right"></i>
+                        </h3>
+                    </a>
+                </div>
+            </section>
+            <!-- pendidikan end -->
+
+            <!-- Prestasi start -->
+            <section id="Prestasi" class="mt-3 d-lg-none">
+                <div class="container-sm">
+                    <div class="title mt-5 d-flex justify-content-between align-items-end">
+                        <span class="fs-1 text-primary border-3 border-secondary border-bottom">Prestasi</span>
+                        <a href="#" class="text-decoration-none"><span
+                                class="fs-5 text-primary border-1 border-primary border-bottom pb-1 d-none d-lg-block">Lihat
+                                Semua <i class="fa-solid fa-arrow-right"></i></span></a>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-12 mb-3">
+                            <div class="card border-0">
+                                <a href="#"><img src="assets/img/c4.webp" alt=""
+                                        class="w-100 img-hvr object-fit-cover"></a>
+                                <div class="card-body">
+                                    <div class="fs-4 fw-semibold"><a href="#"
+                                            class="text-decoration-none text-primary">Wakil Rektor UGM Tinjau Sejumlah
+                                            Lokasi Ujian UTBK di Fakultas dan Perpustakaan</a></div>
+                                    <span class="text-tertiary">26 Aril 2025, 20.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- sm to md -->
+                        <div class="col-12 mb-3">
+                            <div class="card d-flex justify-content-between align-items-center border-0">
+                                <div class="row d-flex justify-content-between align-items-center">
+                                    <a href="#" class="col-4"><img src="assets/img/p2.webp" alt=""
+                                            class="w-100 img-hvr object-fit-cover pddk-img"></a>
+                                    <div class="col-8 card-body">
+                                        <div class="fs-6 fw-semibold"><a href="#"
+                                                class="text-decoration-none text-primary truncate-3-lines">Prodi Sastra
+                                                Inggris UGM Masuk Peringkat 1 di Indonesia dan 151-200 Dunia</a></div>
+                                        <span class="text-tertiary">26 Aril 2025, 20.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mb-3">
+                            <div class="card d-flex justify-content-between align-items-center border-0">
+                                <div class="row d-flex justify-content-between align-items-center">
+                                    <a href="#" class="col-4"><img src="assets/img/p3.webp" alt=""
+                                            class="w-100 img-hvr object-fit-cover pddk-img"></a>
+                                    <div class="col-8 card-body">
+                                        <div class="fs-6 fw-semibold"><a href="#"
+                                                class="text-decoration-none text-primary truncate-3-lines">UGM Raih 2
+                                                Penghargaan Bergengsi Government Social Media Award 2025</a></div>
+                                        <span class="text-tertiary">26 Aril 2025, 20.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- sm to md-->
+                    </div>
+                    <a href="#">
+                        <h3 class="text-end text-primary fw-light d-lg-none"><i class="fa-solid fa-arrow-right"></i>
+                        </h3>
+                    </a>
+                </div>
+            </section>
+            <!-- Prestasi end -->
+
+            <!-- Penelitian dan Inovasi start -->
+            <section id="Penelitian dan Inovasi" class="mt-3 d-lg-none">
+                <div class="container-sm">
+                    <div class="title mt-5 d-flex justify-content-between align-items-end">
+                        <span class="fs-1 text-primary border-3 border-secondary border-bottom">Penelitian dan
+                            Inovasi</span>
+                        <a href="#" class="text-decoration-none"><span
+                                class="fs-5 text-primary border-1 border-primary border-bottom pb-1 d-none d-lg-block">Lihat
+                                Semua <i class="fa-solid fa-arrow-right"></i></span></a>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-12 mb-3">
+                            <div class="card border-0">
+                                <a href="#"><img src="assets/img/b4.webp" alt=""
+                                        class="w-100 img-hvr object-fit-cover"></a>
+                                <div class="card-body">
+                                    <div class="fs-4 fw-semibold"><a href="#"
+                                            class="text-decoration-none text-primary">Dosen UGM Teliti Soal Kebijakan
+                                            dan
+                                            Praktik Penyelundupan Eksploitasi Benih Lobster di Indonesia, Ini
+                                            Hasilnya</a>
+                                    </div>
+                                    <span class="text-tertiary">26 Aril 2025, 20.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- sm to md -->
+                        <div class="col-12 mb-3">
+                            <div class="card d-flex justify-content-between align-items-center border-0">
+                                <div class="row d-flex justify-content-between align-items-center">
+                                    <a href="#" class="col-4"><img src="assets/img/p4.webp" alt=""
+                                            class="w-100 img-hvr object-fit-cover pddk-img"></a>
+                                    <div class="col-8 card-body">
+                                        <div class="fs-6 fw-semibold"><a href="#"
+                                                class="text-decoration-none text-primary truncate-3-lines">Peneliti UGM
+                                                Perkuat Kolaborasi Riset Internasional Lewat Otentikasi Jahe
+                                                Indonesia</a>
+                                        </div>
+                                        <span class="text-tertiary">26 Aril 2025, 20.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mb-3">
+                            <div class="card d-flex justify-content-between align-items-center border-0">
+                                <div class="row d-flex justify-content-between align-items-center">
+                                    <a href="#" class="col-4"><img src="assets/img/p5.webp" alt=""
+                                            class="w-100 img-hvr object-fit-cover pddk-img"></a>
+                                    <div class="col-8 card-body">
+                                        <div class="fs-6 fw-semibold"><a href="#"
+                                                class="text-decoration-none text-primary truncate-3-lines">Peneliti UGM
+                                                Ungkap Tingginya Loyalitas Relawan Festival Film</a></div>
+                                        <span class="text-tertiary">26 Aril 2025, 20.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- sm to md-->
+                    </div>
+                    <a href="#">
+                        <h3 class="text-end text-primary fw-light d-lg-none"><i class="fa-solid fa-arrow-right"></i>
+                        </h3>
+                    </a>
+                </div>
+            </section>
+            <!-- Penelitian dan Inovasi end -->
+
+            <!-- Seputar Kampus start -->
+            <section id="Seputar Kampus" class="mt-3 d-lg-none">
+                <div class="container-sm">
+                    <div class="title mt-5 d-flex justify-content-between align-items-end">
+                        <span class="fs-1 text-primary border-3 border-secondary border-bottom">Seputar Kampus</span>
+                        <a href="#" class="text-decoration-none"><span
+                                class="fs-5 text-primary border-1 border-primary border-bottom pb-1 d-none d-lg-block">Lihat
+                                Semua <i class="fa-solid fa-arrow-right"></i></span></a>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-12 mb-3">
+                            <div class="card border-0">
+                                <a href="#"><img src="assets/img/b3.webp" alt=""
+                                        class="w-100 img-hvr object-fit-cover"></a>
+                                <div class="card-body">
+                                    <div class="fs-4 fw-semibold"><a href="#"
+                                            class="text-decoration-none text-primary">Komunitas Katolik UGM Gelar Misa
+                                            Ekaristi Mengenang Paus Fransiscus</a></div>
+                                    <span class="text-tertiary">26 Aril 2025, 20.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- sm to md -->
+                        <div class="col-12 mb-3">
+                            <div class="card d-flex justify-content-between align-items-center border-0">
+                                <div class="row d-flex justify-content-between align-items-center">
+                                    <a href="#" class="col-4"><img src="assets/img/p6.webp" alt=""
+                                            class="w-100 img-hvr object-fit-cover pddk-img"></a>
+                                    <div class="col-8 card-body">
+                                        <div class="fs-6 fw-semibold"><a href="#"
+                                                class="text-decoration-none text-primary truncate-3-lines">RSA UGM
+                                                Peringati
+                                                HUT Ke-13, Siap Menjadi Bagian dari Health Tourism</a></div>
+                                        <span class="text-tertiary">26 Aril 2025, 20.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mb-3">
+                            <div class="card d-flex justify-content-between align-items-center border-0">
+                                <div class="row d-flex justify-content-between align-items-center">
+                                    <a href="#" class="col-4"><img src="assets/img/p7.webp" alt=""
+                                            class="w-100 img-hvr object-fit-cover pddk-img"></a>
+                                    <div class="col-8 card-body">
+                                        <div class="fs-6 fw-semibold"><a href="#"
+                                                class="text-decoration-none text-primary truncate-3-lines">Tingkatkan
+                                                Layanan Kesehatan, RSA UGM Bangun 3 Gedung Baru</a></div>
+                                        <span class="text-tertiary">26 Aril 2025, 20.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- sm to md-->
+                    </div>
+                    <a href="#">
+                        <h3 class="text-end text-primary fw-light d-lg-none"><i class="fa-solid fa-arrow-right"></i>
+                        </h3>
+                    </a>
+                </div>
+            </section>
+            <!-- Seputar Kampus end -->
+
+            <!-- Kabar Fakultas start -->
+            <section id="Kabar Fakultas" class="mt-3 d-lg-none">
+                <div class="container-sm">
+                    <div class="title mt-5 d-flex justify-content-between align-items-end">
+                        <span class="fs-1 text-primary border-3 border-secondary border-bottom">Kabar Fakultas</span>
+                        <a href="#" class="text-decoration-none"><span
+                                class="fs-5 text-primary border-1 border-primary border-bottom pb-1 d-none d-lg-block">Lihat
+                                Semua <i class="fa-solid fa-arrow-right"></i></span></a>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-12 mb-3">
+                            <div class="card border-0">
+                                <a href="#"><img src="assets/img/k1.webp" alt=""
+                                        class="w-100 img-hvr object-fit-cover"></a>
+                                <div class="card-body">
+                                    <div class="fs-4 fw-semibold"><a href="#"
+                                            class="text-decoration-none text-primary">Komunitas Katolik UGM Gelar Misa
+                                            Ekaristi Mengenang Paus Fransiscus</a></div>
+                                    <span class="text-tertiary">26 Aril 2025, 20.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- sm to md -->
+                        <div class="col-12 mb-3">
+                            <div class="card d-flex justify-content-between align-items-center border-0">
+                                <div class="row d-flex justify-content-between align-items-center">
+                                    <a href="#" class="col-4"><img src="assets/img/k2.webp" alt=""
+                                            class="w-100 img-hvr object-fit-cover pddk-img"></a>
+                                    <div class="col-8 card-body">
+                                        <div class="fs-6 fw-semibold"><a href="#"
+                                                class="text-decoration-none text-primary truncate-3-lines">RSA UGM
+                                                Peringati
+                                                HUT Ke-13, Siap Menjadi Bagian dari Health Tourism</a></div>
+                                        <span class="text-tertiary">26 Aril 2025, 20.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mb-3">
+                            <div class="card d-flex justify-content-between align-items-center border-0">
+                                <div class="row d-flex justify-content-between align-items-center">
+                                    <a href="#" class="col-4"><img src="assets/img/k3.webp" alt=""
+                                            class="w-100 img-hvr object-fit-cover pddk-img"></a>
+                                    <div class="col-8 card-body">
+                                        <div class="fs-6 fw-semibold"><a href="#"
+                                                class="text-decoration-none text-primary truncate-3-lines">Tingkatkan
+                                                Layanan Kesehatan, RSA UGM Bangun 3 Gedung Baru</a></div>
+                                        <span class="text-tertiary">26 Aril 2025, 20.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- sm to md-->
+                    </div>
+                    <a href="#">
+                        <h3 class="text-end text-primary fw-light d-lg-none"><i class="fa-solid fa-arrow-right"></i>
+                        </h3>
+                    </a>
+                </div>
+            </section>
+            <!-- Kabar Fakultas end -->
+
+            <!-- Siaran Pers start -->
+            <section id="Siaran Pers" class="mt-3 d-lg-none">
+                <div class="container-sm">
+                    <div class="title mt-5 d-flex justify-content-between align-items-end">
+                        <span class="fs-1 text-primary border-3 border-secondary border-bottom">Siaran Pers</span>
+                        <a href="#" class="text-decoration-none"><span
+                                class="fs-5 text-primary border-1 border-primary border-bottom pb-1 d-none d-lg-block">Lihat
+                                Semua <i class="fa-solid fa-arrow-right"></i></span></a>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-12 mb-3">
+                            <div class="card border-0">
+                                <a href="#"><img src="assets/img/s1.webp" alt=""
+                                        class="w-100 img-hvr object-fit-cover"></a>
+                                <div class="card-body">
+                                    <div class="fs-4 fw-semibold"><a href="#"
+                                            class="text-decoration-none text-primary">Joko
+                                            Widodo Alumnus UGM</a></div>
+                                    <span class="text-tertiary">26 Aril 2025, 20.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- sm to md -->
+                        <div class="col-12 mb-3">
+                            <div class="card d-flex justify-content-between align-items-center border-0">
+                                <div class="row d-flex justify-content-between align-items-center">
+                                    <a href="#" class="col-4"><img src="assets/img/s2.webp" alt=""
+                                            class="w-100 img-hvr object-fit-cover pddk-img"></a>
+                                    <div class="col-8 card-body">
+                                        <div class="fs-6 fw-semibold"><a href="#"
+                                                class="text-decoration-none text-primary truncate-3-lines">UGM Beri
+                                                Sanksi
+                                                Pelaku Kekerasan Seksual di Fakultas Farmasi</a></div>
+                                        <span class="text-tertiary">26 Aril 2025, 20.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mb-3">
+                            <div class="card d-flex justify-content-between align-items-center border-0">
+                                <div class="row d-flex justify-content-between align-items-center">
+                                    <a href="#" class="col-4"><img src="assets/img/s3.webp" alt=""
+                                            class="w-100 img-hvr object-fit-cover pddk-img"></a>
+                                    <div class="col-8 card-body">
+                                        <div class="fs-6 fw-semibold"><a href="#"
+                                                class="text-decoration-none text-primary truncate-3-lines">Klarifikasi
+                                                UGM
+                                                Soal Tuduhan Ijazah dan Skripsi Palsu Joko Widodo</a></div>
+                                        <span class="text-tertiary">26 Aril 2025, 20.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- sm to md-->
+                    </div>
+                    <a href="#">
+                        <h3 class="text-end text-primary fw-light d-lg-none"><i class="fa-solid fa-arrow-right"></i>
+                        </h3>
+                    </a>
+                </div>
+            </section>
+            <!-- Siaran Pers end -->
+        </article>
+
+        <article>
+            <div class="container-sm">
+                <div class="row">
+                    <!-- pendidikan start -->
+                    <div class="col-4">
+                        <section id="pendidikan" class="mt-3 d-none d-lg-block">
+                            <div>
+                                <div class="title mt-5 d-flex justify-content-between align-items-end">
+                                    <span
+                                        class="fs-1 text-primary border-3 border-secondary border-bottom">Pendidikan</span>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-12 mb-3">
+                                        <div class="card border-0">
+                                            <a href="#"><img src="assets/img/c1.webp" alt=""
+                                                    class="w-100 img-hvr object-fit-cover six-path-img"></a>
+                                            <div class="card-body six-path-body">
+                                                <div class="fs-4 fw-semibold"><a href="#"
+                                                        class="text-decoration-none text-primary">Wakil Rektor UGM
+                                                        Tinjau
+                                                        Sejumlah
+                                                        Lokasi Ujian UTBK di Fakultas dan Perpustakaan</a></div>
+                                                <span class="text-tertiary">26 Aril 2025, 20.00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- sm to md -->
+                                    <div class="col-12 mb-3">
+                                        <div class="card d-flex justify-content-between align-items-center border-0">
+                                            <div class="row d-flex justify-content-between align-items-center">
+                                                <a href="#" class="col-4"><img src="assets/img/c2.webp" alt=""
+                                                        class="w-100 img-hvr object-fit-cover pddk-img"></a>
+                                                <div class="col-8 card-body">
+                                                    <div class="fs-6 fw-semibold"><a href="#"
+                                                            class="text-decoration-none text-primary truncate-3-lines">Kisah
+                                                            Dewi
+                                                            Agustiningsih, Lulus Doktor 2 Tahun 6 Bulan di usia 26 Tahun
+                                                            di</a>
+                                                    </div>
+                                                    <span class="text-tertiary">26 Aril 2025, 20.00</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-3">
+                                        <div class="card d-flex justify-content-between align-items-center border-0">
+                                            <div class="row d-flex justify-content-between align-items-center">
+                                                <a href="#" class="col-4"><img src="assets/img/p1.jpg" alt=""
+                                                        class="w-100 img-hvr object-fit-cover pddk-img"></a>
+                                                <div class="col-8 card-body">
+                                                    <div class="fs-6 fw-semibold"><a href="#"
+                                                            class="text-decoration-none text-primary truncate-3-lines">Kisah
+                                                            Rizki,
+                                                            Lulusan Terbaik S2 FEB UGM Kehilangan Ibu Jelang Wisuda</a>
+                                                    </div>
+                                                    <span class="text-tertiary">26 Aril 2025, 20.00</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- sm to md-->
+                                </div>
+                                <a href="#">
+                                    <h3 class="text-end text-primary fw-light"><i class="fa-solid fa-arrow-right"></i>
+                                    </h3>
+                                </a>
+                            </div>
+                        </section>
+                    </div>
+                    <!-- pendidikan end -->
+
+                    <!-- Prestasi start -->
+                    <div class="col-4">
+                        <section id="Prestasi" class="mt-3 d-none d-lg-block">
+                            <div>
+                                <div class="title mt-5 d-flex justify-content-between align-items-end">
+                                    <span
+                                        class="fs-1 text-primary border-3 border-secondary border-bottom">Prestasi</span>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-12 mb-3">
+                                        <div class="card border-0">
+                                            <a href="#"><img src="assets/img/c4.webp" alt=""
+                                                    class="w-100 img-hvr object-fit-cover six-path-img"></a>
+                                            <div class="card-body six-path-body">
+                                                <div class="fs-4 fw-semibold"><a href="#"
+                                                        class="text-decoration-none text-primary">Wakil Rektor UGM
+                                                        Tinjau
+                                                        Sejumlah
+                                                        Lokasi Ujian UTBK di Fakultas dan Perpustakaan</a></div>
+                                                <span class="text-tertiary">26 Aril 2025, 20.00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- sm to md -->
+                                    <div class="col-12 mb-3">
+                                        <div class="card d-flex justify-content-between align-items-center border-0">
+                                            <div class="row d-flex justify-content-between align-items-center">
+                                                <a href="#" class="col-4"><img src="assets/img/p2.webp" alt=""
+                                                        class="w-100 img-hvr object-fit-cover pddk-img"></a>
+                                                <div class="col-8 card-body">
+                                                    <div class="fs-6 fw-semibold"><a href="#"
+                                                            class="text-decoration-none text-primary truncate-3-lines">Prodi
+                                                            Sastra
+                                                            Inggris UGM Masuk Peringkat 1 di Indonesia dan 151-200
+                                                            Dunia</a>
+                                                    </div>
+                                                    <span class="text-tertiary">26 Aril 2025, 20.00</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-3">
+                                        <div class="card d-flex justify-content-between align-items-center border-0">
+                                            <div class="row d-flex justify-content-between align-items-center">
+                                                <a href="#" class="col-4"><img src="assets/img/p3.webp" alt=""
+                                                        class="w-100 img-hvr object-fit-cover pddk-img"></a>
+                                                <div class="col-8 card-body">
+                                                    <div class="fs-6 fw-semibold"><a href="#"
+                                                            class="text-decoration-none text-primary truncate-3-lines">UGM
+                                                            Raih 2
+                                                            Penghargaan Bergengsi Government Social Media Award 2025</a>
+                                                    </div>
+                                                    <span class="text-tertiary">26 Aril 2025, 20.00</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- sm to md-->
+                                </div>
+                                <a href="#">
+                                    <h3 class="text-end text-primary fw-light"><i class="fa-solid fa-arrow-right"></i>
+                                    </h3>
+                                </a>
+                            </div>
+                        </section>
+                    </div>
+                    <!-- Prestasi end -->
+
+                    <!-- Penelitian dan Inovasi start -->
+                    <div class="col-4">
+                        <section id="Penelitian dan Inovasi" class="mt-3 d-none d-lg-block">
+                            <div>
+                                <div class="title mt-5 d-flex justify-content-between align-items-end">
+                                    <span class="fs-1 text-primary border-3 border-secondary border-bottom">Penelitian
+                                        dan
+                                        Inovasi</span>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-12 mb-3">
+                                        <div class="card border-0">
+                                            <a href="#"><img src="assets/img/b4.webp" alt=""
+                                                    class="w-100 img-hvr object-fit-cover six-path-img"></a>
+                                            <div class="card-body six-path-body">
+                                                <div class="fs-4 fw-semibold"><a href="#"
+                                                        class="text-decoration-none text-primary">Dosen UGM Teliti Soal
+                                                        Kebijakan
+                                                        dan
+                                                        Praktik Penyelundupan Eksploitasi Benih Lobster di Indonesia,
+                                                        Ini
+                                                        Hasilnya</a>
+                                                </div>
+                                                <span class="text-tertiary">26 Aril 2025, 20.00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- sm to md -->
+                                    <div class="col-12 mb-3">
+                                        <div class="card d-flex justify-content-between align-items-center border-0">
+                                            <div class="row d-flex justify-content-between align-items-center">
+                                                <a href="#" class="col-4"><img src="assets/img/p4.webp" alt=""
+                                                        class="w-100 img-hvr object-fit-cover pddk-img"></a>
+                                                <div class="col-8 card-body">
+                                                    <div class="fs-6 fw-semibold"><a href="#"
+                                                            class="text-decoration-none text-primary truncate-3-lines">Peneliti
+                                                            UGM
+                                                            Perkuat Kolaborasi Riset Internasional Lewat Otentikasi Jahe
+                                                            Indonesia</a>
+                                                    </div>
+                                                    <span class="text-tertiary">26 Aril 2025, 20.00</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-3">
+                                        <div class="card d-flex justify-content-between align-items-center border-0">
+                                            <div class="row d-flex justify-content-between align-items-center">
+                                                <a href="#" class="col-4"><img src="assets/img/p5.webp" alt=""
+                                                        class="w-100 img-hvr object-fit-cover pddk-img"></a>
+                                                <div class="col-8 card-body">
+                                                    <div class="fs-6 fw-semibold"><a href="#"
+                                                            class="text-decoration-none text-primary truncate-3-lines">Peneliti
+                                                            UGM
+                                                            Ungkap Tingginya Loyalitas Relawan Festival Film</a></div>
+                                                    <span class="text-tertiary">26 Aril 2025, 20.00</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- sm to md-->
+                                </div>
+                                <a href="#">
+                                    <h3 class="text-end text-primary fw-light"><i class="fa-solid fa-arrow-right"></i>
+                                    </h3>
+                                </a>
+                            </div>
+                        </section>
+                    </div>
+                    <!-- Penelitian dan Inovasi end -->
+
+                    <!-- Seputar Kampus start -->
+                    <div class="col-4">
+                        <section id="Seputar Kampus" class="mt-3 d-none d-lg-block">
+                            <div>
+                                <div class="title mt-5 d-flex justify-content-between align-items-end">
+                                    <span class="fs-1 text-primary border-3 border-secondary border-bottom">Seputar
+                                        Kampus</span>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-12 mb-3">
+                                        <div class="card border-0">
+                                            <a href="#"><img src="assets/img/b3.webp" alt=""
+                                                    class="w-100 img-hvr object-fit-cover six-path-img"></a>
+                                            <div class="card-body six-path-body">
+                                                <div class="fs-4 fw-semibold"><a href="#"
+                                                        class="text-decoration-none text-primary">Komunitas Katolik UGM
+                                                        Gelar Misa
+                                                        Ekaristi Mengenang Paus Fransiscus</a></div>
+                                                <span class="text-tertiary">26 Aril 2025, 20.00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- sm to md -->
+                                    <div class="col-12 mb-3">
+                                        <div class="card d-flex justify-content-between align-items-center border-0">
+                                            <div class="row d-flex justify-content-between align-items-center">
+                                                <a href="#" class="col-4"><img src="assets/img/p6.webp" alt=""
+                                                        class="w-100 img-hvr object-fit-cover pddk-img"></a>
+                                                <div class="col-8 card-body">
+                                                    <div class="fs-6 fw-semibold"><a href="#"
+                                                            class="text-decoration-none text-primary truncate-3-lines">RSA
+                                                            UGM
+                                                            Peringati
+                                                            HUT Ke-13, Siap Menjadi Bagian dari Health Tourism</a></div>
+                                                    <span class="text-tertiary">26 Aril 2025, 20.00</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-3">
+                                        <div class="card d-flex justify-content-between align-items-center border-0">
+                                            <div class="row d-flex justify-content-between align-items-center">
+                                                <a href="#" class="col-4"><img src="assets/img/p7.webp" alt=""
+                                                        class="w-100 img-hvr object-fit-cover pddk-img"></a>
+                                                <div class="col-8 card-body">
+                                                    <div class="fs-6 fw-semibold"><a href="#"
+                                                            class="text-decoration-none text-primary truncate-3-lines">Tingkatkan
+                                                            Layanan Kesehatan, RSA UGM Bangun 3 Gedung Baru</a></div>
+                                                    <span class="text-tertiary">26 Aril 2025, 20.00</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- sm to md-->
+                                </div>
+                                <a href="#">
+                                    <h3 class="text-end text-primary fw-light"><i class="fa-solid fa-arrow-right"></i>
+                                    </h3>
+                                </a>
+                            </div>
+                        </section>
+                    </div>
+                    <!-- Seputar Kampus end -->
+
+                    <!-- Kabar Fakultas start -->
+                    <div class="col-4">
+                        <section id="Kabar Fakultas" class="mt-3 d-none d-lg-block">
+                            <div>
+                                <div class="title mt-5 d-flex justify-content-between align-items-end">
+                                    <span class="fs-1 text-primary border-3 border-secondary border-bottom">Kabar
+                                        Fakultas</span>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-12 mb-3">
+                                        <div class="card border-0">
+                                            <a href="#"><img src="assets/img/k1.webp" alt=""
+                                                    class="w-100 img-hvr object-fit-cover six-path-img"></a>
+                                            <div class="card-body six-path-body">
+                                                <div class="fs-4 fw-semibold"><a href="#"
+                                                        class="text-decoration-none text-primary">Komunitas Katolik UGM
+                                                        Gelar Misa
+                                                        Ekaristi Mengenang Paus Fransiscus</a></div>
+                                                <span class="text-tertiary">26 Aril 2025, 20.00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- sm to md -->
+                                    <div class="col-12 mb-3">
+                                        <div class="card d-flex justify-content-between align-items-center border-0">
+                                            <div class="row d-flex justify-content-between align-items-center">
+                                                <a href="#" class="col-4"><img src="assets/img/k2.webp" alt=""
+                                                        class="w-100 img-hvr object-fit-cover pddk-img"></a>
+                                                <div class="col-8 card-body">
+                                                    <div class="fs-6 fw-semibold"><a href="#"
+                                                            class="text-decoration-none text-primary truncate-3-lines">RSA
+                                                            UGM
+                                                            Peringati
+                                                            HUT Ke-13, Siap Menjadi Bagian dari Health Tourism</a></div>
+                                                    <span class="text-tertiary">26 Aril 2025, 20.00</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-3">
+                                        <div class="card d-flex justify-content-between align-items-center border-0">
+                                            <div class="row d-flex justify-content-between align-items-center">
+                                                <a href="#" class="col-4"><img src="assets/img/k3.webp" alt=""
+                                                        class="w-100 img-hvr object-fit-cover pddk-img"></a>
+                                                <div class="col-8 card-body">
+                                                    <div class="fs-6 fw-semibold"><a href="#"
+                                                            class="text-decoration-none text-primary truncate-3-lines">Tingkatkan
+                                                            Layanan Kesehatan, RSA UGM Bangun 3 Gedung Baru</a></div>
+                                                    <span class="text-tertiary">26 Aril 2025, 20.00</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- sm to md-->
+                                </div>
+                                <a href="#">
+                                    <h3 class="text-end text-primary fw-light"><i class="fa-solid fa-arrow-right"></i>
+                                    </h3>
+                                </a>
+                            </div>
+                        </section>
+                    </div>
+                    <!-- Kabar Fakultas end -->
+
+                    <!-- Siaran Pers start -->
+                    <div class="col-4">
+                        <section id="Siaran Pers" class="mt-3 d-none d-lg-block">
+                            <div>
+                                <div class="title mt-5 d-flex justify-content-between align-items-end">
+                                    <span class="fs-1 text-primary border-3 border-secondary border-bottom">Siaran
+                                        Pers</span>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-12 mb-3">
+                                        <div class="card border-0">
+                                            <a href="#"><img src="assets/img/s1.webp" alt=""
+                                                    class="w-100 img-hvr object-fit-cover six-path-img"></a>
+                                            <div class="card-body six-path-body">
+                                                <div class="fs-4 fw-semibold"><a href="#"
+                                                        class="text-decoration-none text-primary">Joko
+                                                        Widodo Alumnus UGM</a></div>
+                                                <span class="text-tertiary">26 Aril 2025, 20.00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- sm to md -->
+                                    <div class="col-12 mb-3">
+                                        <div class="card d-flex justify-content-between align-items-center border-0">
+                                            <div class="row d-flex justify-content-between align-items-center">
+                                                <a href="#" class="col-4"><img src="assets/img/s2.webp" alt=""
+                                                        class="w-100 img-hvr object-fit-cover pddk-img"></a>
+                                                <div class="col-8 card-body">
+                                                    <div class="fs-6 fw-semibold"><a href="#"
+                                                            class="text-decoration-none text-primary truncate-3-lines">UGM
+                                                            Beri
+                                                            Sanksi
+                                                            Pelaku Kekerasan Seksual di Fakultas Farmasi</a></div>
+                                                    <span class="text-tertiary">26 Aril 2025, 20.00</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mb-3">
+                                        <div class="card d-flex justify-content-between align-items-center border-0">
+                                            <div class="row d-flex justify-content-between align-items-center">
+                                                <a href="#" class="col-4"><img src="assets/img/s3.webp" alt=""
+                                                        class="w-100 img-hvr object-fit-cover pddk-img"></a>
+                                                <div class="col-8 card-body">
+                                                    <div class="fs-6 fw-semibold"><a href="#"
+                                                            class="text-decoration-none text-primary truncate-3-lines">Klarifikasi
+                                                            UGM
+                                                            Soal Tuduhan Ijazah dan Skripsi Palsu Joko Widodo</a></div>
+                                                    <span class="text-tertiary">26 Aril 2025, 20.00</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- sm to md-->
+                                </div>
+                                <a href="#">
+                                    <h3 class="text-end text-primary fw-light"><i class="fa-solid fa-arrow-right"></i>
+                                    </h3>
+                                </a>
+                            </div>
+                        </section>
+                    </div>
+                    <!-- Siaran Pers end -->
+                </div>
+            </div>
+        </article>
+
+        <!-- kategori -->
+        <section id="kategori" class="mt-3">
+            <div class="container-sm">
+                <div class="title mt-5 d-flex justify-content-between align-items-end">
+                    <span class="fs-1 text-primary border-3 border-secondary border-bottom">Kategori</span>
+                    <a href="#" class="text-decoration-none"><span
+                            class="fs-5 text-primary border-1 border-primary border-bottom pb-1 d-none d-lg-block">Lihat
+                            Semua <i class="fa-solid fa-arrow-right"></i></span></a>
+                </div>
+                <!-- sm -->
+                <div
+                    class="d-flex justify-content-between align-items-center d-lg-none py-3 px-3 border-1 border-bottom d-lg-none">
+                    <a href="#" class="text-decoration-none">
+                        <h6 class="text-primary">Kategori Lists</h6>
+                    </a>
+                    <a href="#" class="text-decoration-none">
+                        <h6 class="text-primary"><i class="fa-solid fa-bars"></i></h6>
+                    </a>
+                </div>
+                <!-- sm -->
+                <!-- lg -->
+                <div class="row d-none d-lg-flex g-3">
+                    <div class="col-lg-4">
+                        <div class="card border-0 border-bottom border-2 border-primary rounded-0">
+                            <div class="card-body px-3 pt-4 pb-1 text-primary">
+                                <div class="fs-5">Kategori A</div>
+                                <div class="fs-6">Deskripsi</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card border-0 border-bottom border-2 border-primary rounded-0">
+                            <div class="card-body px-3 pt-4 pb-1 text-primary">
+                                <div class="fs-5">Kategori B</div>
+                                <div class="fs-6">Deskripsi</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card border-0 border-bottom border-2 border-primary rounded-0">
+                            <div class="card-body px-3 pt-4 pb-1 text-primary">
+                                <div class="fs-5">Kategori C</div>
+                                <div class="fs-6">Deskripsi</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card border-0 border-bottom border-2 border-primary rounded-0">
+                            <div class="card-body px-3 pt-4 pb-1 text-primary">
+                                <div class="fs-5">Kategori A</div>
+                                <div class="fs-6">Deskripsi</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card border-0 border-bottom border-2 border-primary rounded-0">
+                            <div class="card-body px-3 pt-4 pb-1 text-primary">
+                                <div class="fs-5">Kategori B</div>
+                                <div class="fs-6">Deskripsi</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card border-0 border-bottom border-2 border-primary rounded-0">
+                            <div class="card-body px-3 pt-4 pb-1 text-primary">
+                                <div class="fs-5">Kategori C</div>
+                                <div class="fs-6">Deskripsi</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card border-0 border-bottom border-2 border-primary rounded-0">
+                            <div class="card-body px-3 pt-4 pb-1 text-primary">
+                                <div class="fs-5">Kategori A</div>
+                                <div class="fs-6">Deskripsi</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card border-0 border-bottom border-2 border-primary rounded-0">
+                            <div class="card-body px-3 pt-4 pb-1 text-primary">
+                                <div class="fs-5">Kategori B</div>
+                                <div class="fs-6">Deskripsi</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card border-0 border-bottom border-2 border-primary rounded-0">
+                            <div class="card-body px-3 pt-4 pb-1 text-primary">
+                                <div class="fs-5">Kategori C</div>
+                                <div class="fs-6">Deskripsi</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- kategori -->
+
+        <!-- majalah -->
+        <section id="majalah" class="mt-3">
+            <div class="container-sm">
+                <div class="title mt-5 d-flex justify-content-between align-items-end mb-3">
+                    <span class="fs-1 text-primary border-3 border-secondary border-bottom">Majalah Kabar UGM</span>
+                    <a href="#" class="text-decoration-none"><span
+                            class="fs-5 text-primary border-1 border-primary border-bottom pb-1 d-none d-lg-block">Lihat
+                            Semua <i class="fa-solid fa-arrow-right"></i></span></a>
+                </div>
+                <span class="fs-6 text-primary">Kabar dari UGM dalam bentuk majalah digital</span>
+                <div class="row mt-3">
+                    <div class="col-6 col-md-3 mb-4">
+                        <a href="#"><img src="assets/img/m1.webp" alt="" class="w-100 img-hvr"></a>
+                    </div>
+                    <div class="col-6 col-md-3 mb-4">
+                        <a href="#"><img src="assets/img/m2.webp" alt="" class="w-100 img-hvr"></a>
+                    </div>
+                    <div class="col-6 col-md-3 mb-4">
+                        <a href="#"><img src="assets/img/m3.webp" alt="" class="w-100 img-hvr"></a>
+                    </div>
+                    <div class="col-6 col-md-3 mb-4">
+                        <a href="#"><img src="assets/img/m4.webp" alt="" class="w-100 img-hvr"></a>
+                    </div>
+                </div>
+                <a href="#">
+                    <h3 class="text-end text-primary fw-light d-lg-none"><i class="fa-solid fa-arrow-right"></i></h3>
+                </a>
+            </div>
+        </section>
+        <!-- majalah -->
+
+        <!-- video start -->
+        <section id="video" class="pt-1 bg-primary text-white">
+            <div class="container-sm pb-5">
+                <div class="title mt-5 d-flex justify-content-between align-items-end">
+                    <span class="fs-1 border-3 border-secondary border-bottom">Video</span>
+                    <a href="#" class="text-decoration-none text-white"><span
+                            class="fs-5 border-1 border-primary border-bottom pb-1 d-none d-lg-block">Lihat
+                            Semua <i class="fa-solid fa-arrow-right"></i></span></a>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-12 mb-3 d-lg-none">
+                        <div class=border-0">
+                            <a href="#"><img src="assets/img/v1.webp" alt=""
+                                    class="w-100 img-hvr vid-img object-fit-cover"></a>
+                            <div class="body">
+                                <div class="fs-4 fw-semibold"><a href="#" class="text-decoration-none text-white">Pojok
+                                        Bulaksumur Edisi Februari 2025: 100 Hari Kinerja Pemerintahan Prabowo-Gibran</a>
+                                </div>
+                                <span class="text-tertiary">26 Aril 2025, 20.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 mb-3 d-none d-lg-block">
+                        <div class=border-0">
+                            <div class="row">
+                                <a href="#"><img src="assets/img/v1.webp" alt=""
+                                        class="w-100 img-hvr object-fit-cover"></a>
+                                <div>
+                                    <div class="fs-5 fw-semibold"><a href="#"
+                                            class="text-decoration-none text-white">Pojok Bulaksumur Edisi Februari
+                                            2025: 100 Hari Kinerja Pemerintahan Prabowo-Gibran</a></div>
+                                    <span class="text-white">26 Aril 2025, 20.00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- sm -->
+                    <div class="col-12 mb-3 d-lg-none">
+                        <div
+                            class="pb-4 border-1 border-bottom d-flex justify-content-between align-items-center border-0">
+                            <div class="row d-flex justify-content-between align-items-center">
+                                <a href="#" class="col-4"><img src="assets/img/v2.webp" alt=""
+                                        class="w-100 img-hvr object-fit-cover pddk-img"></a>
+                                <div class="col-8 text-white">
+                                    <div class="fs-6 fw-semibold"><a href="#"
+                                            class="text-decoration-none text-white truncate-3-lines">Pojok Bulaksumur
+                                            Edisi Januari 2025: Makan Bergizi Gratis Perlu Diawasi</a></div>
+                                    <span class="text-white">26 Aril 2025, 20.00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 mb-3 d-lg-none">
+                        <div
+                            class="pb-4 border-1 border-bottom d-flex justify-content-between align-items-center border-0">
+                            <div class="row d-flex justify-content-between align-items-center">
+                                <a href="#" class="col-4"><img src="assets/img/v3.webp" alt=""
+                                        class="w-100 img-hvr object-fit-cover pddk-img"></a>
+                                <div class="col-8 text-white">
+                                    <div class="fs-6 fw-semibold"><a href="#"
+                                            class="text-decoration-none text-white truncate-3-lines">Pojok Bulaksumur
+                                            Edisi Oktober 2024: Menelaah Tantangan Kabinet</a></div>
+                                    <span class="text-white">26 Aril 2025, 20.00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- sm -->
+                    <!-- lg -->
+                    <div class="col-lg-6 d-none d-lg-block">
+                        <div class="col-12 mb-3">
+                            <div
+                                class="pb-4 border-1 border-bottom d-flex justify-content-between align-items-center border-0">
+                                <div class="row d-flex justify-content-between align-items-center">
+                                    <a href="#" class="col-4"><img src="assets/img/v2.webp" alt=""
+                                            class="w-100 img-hvr object-fit-cover pddk-img"></a>
+                                    <div class="col-8 text-white">
+                                        <div class="fs-6 fw-semibold"><a href="#"
+                                                class="text-decoration-none text-white truncate-3-lines">Pojok
+                                                Bulaksumur
+                                                Edisi Januari 2025: Makan Bergizi Gratis Perlu Diawasi</a></div>
+                                        <span class="text-white">26 Aril 2025, 20.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mb-3">
+                            <div
+                                class="pb-4 border-1 border-bottom d-flex justify-content-between align-items-center border-0">
+                                <div class="row d-flex justify-content-between align-items-center">
+                                    <a href="#" class="col-4"><img src="assets/img/v3.webp" alt=""
+                                            class="w-100 img-hvr object-fit-cover pddk-img"></a>
+                                    <div class="col-8 text-white">
+                                        <div class="fs-6 fw-semibold"><a href="#"
+                                                class="text-decoration-none text-white truncate-3-lines">Pojok
+                                                Bulaksumur
+                                                Edisi Oktober 2024: Menelaah Tantangan Kabinet</a></div>
+                                        <span class="text-white">26 Aril 2025, 20.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mb-3">
+                            <div
+                                class="pb-4 border-1 border-bottom d-flex justify-content-between align-items-center border-0">
+                                <div class="row d-flex justify-content-between align-items-center">
+                                    <a href="#" class="col-4"><img src="assets/img/v4.webp" alt=""
+                                            class="w-100 img-hvr object-fit-cover pddk-img"></a>
+                                    <div class="col-8 text-white">
+                                        <div class="fs-6 fw-semibold"><a href="#"
+                                                class="text-decoration-none text-white truncate-3-lines">Pojok
+                                                Bulaksumur
+                                                Edisi Oktober 2024: Menelaah Tantangan Kabinet</a></div>
+                                        <span class="text-white">26 Aril 2025, 20.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- lg -->
+                </div>
+                <a href="#">
+                    <h3 class="text-end text-white fw-light d-lg-none"><i class="fa-solid fa-arrow-right"></i></h3>
+                </a>
+            </div>
+        </section>
+        <!-- video end -->
+
+        <!-- links start -->
+        <section id="links" class="my-5">
+            <div class="container-sm">
+                <div class="row">
+                    <div class="col-6 col-md-4 py-3 px-3">
+                        <a href="#"><img src="assets/img/l1.webp" alt="" class="w-100"></a>
+                    </div>
+                    <div class="col-6 col-md-4 py-3 px-3">
+                        <a href="#"><img src="assets/img/l2.webp" alt="" class="w-100"></a>
+                    </div>
+                    <div class="col-6 col-md-4 py-3 px-3">
+                        <a href="#"><img src="assets/img/l3.webp" alt="" class="w-100"></a>
+                    </div>
+                    <div class="col-6 col-md-4 py-3 px-3">
+                        <a href="#"><img src="assets/img/l4.webp" alt="" class="w-100"></a>
+                    </div>
+                    <div class="col-6 col-md-4 py-3 px-3">
+                        <a href="#"><img src="assets/img/l5.webp" alt="" class="w-100"></a>
+                    </div>
+                    <div class="col-6 col-md-4 py-3 px-3">
+                        <a href="#"><img src="assets/img/l6.webp" alt="" class="w-100"></a>
+                    </div>
+                    <div class="col-6 col-md-4 offset-6 offset-md-4 py-3 px-3">
+                        <a href="#"><img src="assets/img/l7.webp" alt="" class="w-100"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- links end -->
+
+    </main>
+
+    <footer>
+        <div class="container-fluid bg-primary">
+            <div class="container-sm py-4">
+                <div class="row my-2">
+                    <div class="col-12">
+                        <ul class="text-decoration-none d-flex justify-content-center align-items-center gap-4">
+                            <li style="list-style: none;"><a href="#" class="text-white"><i
+                                        class="fs-3 fa-brands fa-instagram"></i></a></li>
+                            <li style="list-style: none;"><a href="#" class="text-white"><i
+                                        class="fs-3 fa-brands fa-youtube"></i></a></li>
+                            <li style="list-style: none;"><a href="#" class="text-white"><i
+                                        class="fs-3 fa-brands fa-facebook"></i></a></li>
+                            <li style="list-style: none;"><a href="#" class="text-white"><i
+                                        class="fs-3 fa-brands fa-x-twitter"></i></a></li>
+                            <li style="list-style: none;"><a href="#" class="text-white"><i
+                                        class="fs-3 fa-brands fa-linkedin-in"></i></a></li>
+                            <li style="list-style: none;"><a href="#" class="text-white"><i
+                                        class="fs-3 fa-brands fa-tiktok"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row my-4">
+                    <div class="d-flex justify-content-center align-items-center gap-4">
+                        <img src="assets/img/ugm_logo.webp" alt="" style="height: 60px;">
+
+                        <div class="d-flex flex-column lh-1 text-white"
+                            style="font-family: 'Gama-Serif-Regular'; font-size: 1.4rem;">
+                            <span>UNIVERSITAS</span>
+                            <span>GADJAH MADA</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row my-4">
+                    <div
+                        class="col-12 px-5 text-center text-white d-flex justify-content-center align-items-center gap-3">
+                        <i class="fs-1 text-white fa-solid fa-location-dot"></i>
+                        <span>Bulaksumur, Caturtunggal, Kec. Depok, Kabupaten Sleman, Daerah Istimewa Yogyakarta
+                            55281</span>
+                    </div>
+                </div>
+                <div class="row my-4">
+                    <div class="col-12 px-5 text-center text-white">
+                        <span>E: info@ugm.ac.id | P: +62(274)588688 | F: +62(274)565223 | WA: +628112869988</span>
+                    </div>
+                </div>
+            </div>
+            <img src="assets/img/f1.webp" alt="" class="w-100">
+        </div>
+    </footer>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
